@@ -1,4 +1,12 @@
 var ipData,ipAddress,isp,country,city,lat,long,timezone,map;
+map = L.map('map').setView([40.650002, -73.949997], 13);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+        
+        L.marker([lat, long]).addTo(map)
+            .bindPopup('Rough estimate of<br> ISP geolocation.')
+            .openPopup();
 function generateIpDetails(){
     var ip = document.getElementById("ipTxt").value;
     var api_key = "at_DWbeNhrqKKpRNwGFekYocieSqi2mP";
@@ -32,7 +40,7 @@ function generateMap(lat,long){
         }).addTo(map);
         
         L.marker([lat, long]).addTo(map)
-            .bindPopup("A rough estimate of the<br>IP's location")
+            .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
             .openPopup();
     }
     else{
@@ -42,7 +50,7 @@ function generateMap(lat,long){
         }).addTo(map);
         
         L.marker([lat, long]).addTo(map)
-            .bindPopup("A rough estimate of the<br>IP's location")
+            .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
             .openPopup();
         
     }
