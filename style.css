@@ -57,7 +57,7 @@ input {
 }
 .background {
   height: 40vh;
-  background-image: url(images/pattern-bg.png);
+  background-image: url("images/pattern-bg.png");
   object-fit: cover;
 }
 #map {
