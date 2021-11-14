@@ -32,7 +32,7 @@ function generateMap(lat,long){
         }).addTo(map);
         
         L.marker([lat, long]).addTo(map)
-            .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+            .bindPopup("A rough estimate of the<br>IP's location")
             .openPopup();
     }
     else{
