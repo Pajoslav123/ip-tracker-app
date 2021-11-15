@@ -10,7 +10,7 @@ body {
 .ip-details {
   position: relative;
   z-index: 5;
-  transform: translateY(50%);
+  transform: translateY(80%);
   padding: 2rem 0;
   display: flex;
   justify-content: space-around;
@@ -21,7 +21,7 @@ body {
 }
 .title {
   color: #fff;
-  padding: 1rem 0;
+  padding: 3rem 0 1rem 0;
 }
 .box {
   padding: 0 1rem;
@@ -59,9 +59,12 @@ input {
   margin: 0 auto;
 }
 .background {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  
   height: 40vh;
   background-image: url(images/pattern-bg.png);
-  object-fit: cover;
+ 
 }
 #map {
   height: 60vh;
